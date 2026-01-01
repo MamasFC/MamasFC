@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    margin: 400px 20px;
+    
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 100px;
+    
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 15px rgb(5, 95, 5);
+
+}
+
+.card .front image {
+  position: absolute;
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(51, 148, 72);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 10px 15px rgb(2, 90, 16);
+}
+
+.card .back .link {
+    border-top: solid 1px rgb(3, 82, 7);
+    height: 50px;
+    line-height: 50px;
+
+}
+
+
+
+.card .back .h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.texto2 {
+    color: rgb(3, 78, 22);
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 15px;
+
+
+}
+
+.texto3 {
+    color: rgb(138, 136, 136);
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+
+
+}
+
+.texto0 {
+    color: rgb(11, 78, 5);
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.linea {
+  width: 50px;
+  height: 3px;
+  background: black;
+  margin: 20px auto;
+}
+
+.texto4 {
+    color: rgb(138, 136, 136);
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 10px;
+
+
+}
+
+.linea2 {
+  width: 600px;
+  height: 1px;
+  background: black;
+  margin: 25px auto;
+}
+
+.footer1 {
+  margin-top: 80px;
+  padding: 20px 10px;
+  text-align: right;
+  font-size: 14px;
+  color: #020000;
+  background: #ffffff;
+  border: 1px solid #096e09;
+}
+
+.circle-4 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgb(34, 122, 12);
+    border-radius: 5000px;
+    margin: 110px auto 0 auto;
+}
+
+.circle-4 {
+    text-align: center;
+}
+.circle-4 img {
+    height:50px;
+    width: 50px;
+    
+    border-radius: 5000px;
+    margin: 5px auto 0 auto;
+}
+
+
+
+
+body {animation: contentEnter 0s ease-out;}
+
