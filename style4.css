@@ -203,4 +203,52 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    nav .logo {
+        width: 70%;
+        font-size: 24px;
+    }
+
+    nav .icon-bars {
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    nav .list {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background: white;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        /* 👇 CLAVE */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    nav .list li a {
+        font-size: 22px;
+    }
+
+    /* cuando se abre */
+    #toggle:checked ~ .list {
+        max-height: 100vh;
+    }
+}
+
+
 
