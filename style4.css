@@ -22,6 +22,11 @@ nav {
     height: 100px;
     background: #fff;
     border-bottom: 1px solid #096e09;
+    background-image: url(images/Final5.jpg);
+     background-size: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 
 nav .logo {
@@ -34,6 +39,7 @@ nav .logo {
     color: rgb(14, 100, 6);
     font-weight: bold;
     text-transform: uppercase;
+   
 }
 
 nav .list {
@@ -249,6 +255,3 @@ section {
         max-height: 100vh;
     }
 }
-
-
-

@@ -21,7 +21,13 @@ nav {
     padding: 0 20%;
     height:  100px;
     background-color: rgb(255, 255, 255);
-border-bottom: 1px solid #096e09;}
+border-bottom: 1px solid #096e09;
+background-image: url(images/Final5.jpg);
+ background-size: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 nav .logo {
     float:left;
@@ -370,4 +376,28 @@ nav {
     transform: translateY(0);
   }
 }
+
+/* Estilo para los escudos en la tabla */
+.team-logo {
+    width: 32px;              /* tamaño ideal para tabla */
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;       /* opcional: redondeado como escudo clásico */
+    object-fit: contain;
+    background: #f8f8f8;      /* fondo claro para que resalte si es transparente */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Alineación del texto con el logo */
+.tabla-futbol td:nth-child(2) {
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* Opcional: hover en fila resalta también el logo */
+.tabla-futbol tbody tr:hover {
+    background: #f0f9f0;
+}
+
 

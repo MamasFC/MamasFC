@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamas FC - Nuestra Historia</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="toggle">
+
+        <div class="logo">
+            <strong>Mamas FC</strong>
+        </div>
+
+        <ul class="list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="partidos.html">Partidos</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+
+        <label for="toggle" class="icon-bars">☰</label>
+    </nav>
+
+    <section class="historia-section">
+        <h1 class="texto">Nuestra Historia</h1>
+        
+        <div class="historia-contenido">
+            <p>
+                Mamas FC nació en el corazón de nuestra comunidad en el año 2015, 
+                cuando un grupo de amigos y apasionados del fútbol decidió crear algo más que un equipo: 
+                una familia unida por la misma pasión. Desde las primeras canchas de tierra hasta los torneos más importantes 
+                de la zona, cada etapa ha dejado su huella... también en nuestras camisetas.
+            </p>
+            <p>
+                A lo largo de estos años hemos ido evolucionando, no solo en el juego, sino también en nuestra identidad visual. 
+                Cada camiseta cuenta una historia: desde la primera verde sencilla que nos unió, pasando por los diseños más atrevidos, 
+                hasta la actual que llevamos con orgullo en cada partido.
+            </p>
+            <p class="destacado">
+                ¡Reviví la evolución de nuestras camisetas y de nuestro sueño verde!
+            </p>
+        </div>
+
+        <!-- CARRUSEL 3D MEJORADO -->
+        <div class="carousel-3d-container">
+            <button class="carousel-3d-btn prev" aria-label="Anterior">‹</button>
+            <button class="carousel-3d-btn next" aria-label="Siguiente">›</button>
+
+            <div class="carousel-3d-wrapper">
+                <div class="carousel-3d" id="carousel3d">
+                    <figure data-year="2015" data-desc="La primera: simple, verde y llena de sueños">
+                        <img src= "images/White_Black_Gold_Circle_Modern_Football_Club_Logo-removebg-preview.png" alt="Camiseta 2015">
+                    </figure>
+                    <figure data-year="2017" data-desc="Primer cambio: más detalles y orgullo">
+                        <img src="images/White_Black_Gold_Circle_Modern_Football_Club_Logo-removebg-preview.png" alt="Camiseta 2017">
+                    </figure>
+                    <figure data-year="2019" data-desc="Aniversario: oro y verde eterno">
+                        <img src="images/White_Black_Gold_Circle_Modern_Football_Club_Logo-removebg-preview.png" alt="Camiseta 2019">
+                    </figure>
+                    <figure data-year="2022" data-desc="Diseño moderno: elegancia y fuerza">
+                        <img src="images/White_Black_Gold_Circle_Modern_Football_Club_Logo-removebg-preview.png" alt="Camiseta 2022">
+                    </figure>
+                    <figure data-year="2025" data-desc="Actual: corazón verde con detalles dorados">
+                        <img src="images/White_Black_Gold_Circle_Modern_Football_Club_Logo-removebg-preview.png" alt="Camiseta 2025">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="carousel-caption" id="carouselCaption">
+                <span class="year" id="year">2015</span>
+                <span class="desc" id="desc">La primera: simple, verde y llena de sueños</span>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
